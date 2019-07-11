@@ -1,0 +1,75 @@
+{
+  "name": "react-test",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "./",
+  "husky": {
+    "hooks": {
+      "-commit": "pretty-quick --staged && CI=true npm run test"
+    }
+  },
+  "prettier": {
+    "printWidth": 120,
+    "singleQuote": true,
+    "jsxSingleQuote": true,
+    "trailingComma": "all"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.1.1",
+    "@material-ui/icons": "^4.2.0",
+    "@types/jest": "24.0.13",
+    "@types/node": "12.0.8",
+    "@types/react": "16.8.19",
+    "@types/react-dom": "16.8.4",
+    "@types/storybook__addon-info": "^4.1.2",
+    "@types/storybook__addon-knobs": "^5.0.1",
+    "@types/storybook__addon-storyshots": "^4.0.1",
+    "@types/storybook__react": "^4.0.2",
+    "plop": "^2.3.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "typeface-roboto": "0.0.54",
+    "typescript": "3.5.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build && mv build ../../.dist",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@storybook/addon-a11y": "^5.1.9",
+    "@storybook/addon-actions": "^5.1.9",
+    "@storybook/addon-backgrounds": "^5.1.9",
+    "@storybook/addon-info": "^5.1.9",
+    "@storybook/addon-knobs": "^5.1.9",
+    "@storybook/addon-links": "^5.1.9",
+    "@storybook/addon-notes": "^5.1.9",
+    "@storybook/addon-storyshots": "^5.1.9",
+    "@storybook/addon-viewport": "^5.1.9",
+    "@storybook/addons": "^5.1.9",
+    "@storybook/react": "^5.1.9",
+    "@testing-library/react": "^8.0.1",
+    "eslint-plugin-import": "^2.17.3",
+    "husky": "^2.4.1",
+    "jest-dom": "^3.5.0",
+    "prettier": "^1.18.2",
+    "pretty-quick": "^1.11.0",
+    "react-scripts": "^3.0.1",
+    "react-test-renderer": "^16.8.6"
+  }
+}
