@@ -1,0 +1,41 @@
+.agentConsole {
+  outline: 2px dotted pink;
+}
+
+.agentConsole {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  grid-row-gap: 10px;
+  grid-template-areas:
+    'header header header header'
+    'ccp ccp none none'
+    'main main main main';
+
+  outline: 2px dotted pink;
+}
+.agentConsole h1 {
+  grid-area: header;
+}
+.agentConsole h1::first-letter {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  color: red;
+}
+
+#ccpContainer {
+  grid-area: ccp;
+
+  height: 465px;
+  padding: 25px;
+
+  border: 1px solid green;
+}
+
+#section-main {
+  grid-area: main;
+
+  height: 495px;
+
+  border: 1px solid red;
+}

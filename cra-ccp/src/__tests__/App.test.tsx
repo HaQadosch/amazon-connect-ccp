@@ -12,8 +12,8 @@ describe('<App />', () => {
     ReactDOM.unmountComponentAtNode(div);
   });
 
-  it('renders Learn React message', () => {
-    const { getByText } = render(<App />);
-    expect(getByText('Learn React')).toBeInTheDocument();
-  });
+  // it('renders Learn React message', () => {
+  //   const { getByText } = render(<App />);
+  //   expect(getByText('Learn React')).toBeInTheDocument();
+  // });
 });

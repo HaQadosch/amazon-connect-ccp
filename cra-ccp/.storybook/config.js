@@ -29,6 +29,7 @@ addParameters({
 function loadStories() {
   require('../src/stories/Sample.stories');
   /** add new stories below */
+	require('../src/stories/AgentConsole.stories')
 }
 
 configure(loadStories, module);
